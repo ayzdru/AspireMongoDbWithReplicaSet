@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Sdk Name="Aspire.AppHost.Sdk" Version="9.5.2" />
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<UserSecretsId>f1f34d58-e850-4293-ba3f-c1a98614ddfb</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Aspire.Hosting.AppHost" Version="13.0.1" />
+		<PackageReference Include="Aspire.Hosting.MongoDB" Version="13.0.1" />
+		<PackageReference Include="CommunityToolkit.Aspire.Hosting.MongoDB.Extensions" Version="13.0.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="Mongo.Dockerfile" CopyToOutputDirectory="PreserveNewest" />
+		<Content Include="Mongo.Dockerfile">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<Pack>true</Pack>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\AspireMongoDbWithReplicaSet\AspireMongoDbWithReplicaSet.csproj" />
+	</ItemGroup>
+
+</Project>

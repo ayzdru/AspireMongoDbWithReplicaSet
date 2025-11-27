@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="source/AspireMongoDbWithReplicaSet.AppHost/AspireMongoDbWithReplicaSet.AppHost.csproj" />
+  <Project Path="source/AspireMongoDbWithReplicaSet.ServiceDefaults/AspireMongoDbWithReplicaSet.ServiceDefaults.csproj" />
+  <Project Path="source/AspireMongoDbWithReplicaSet/AspireMongoDbWithReplicaSet.csproj" />
+</Solution>

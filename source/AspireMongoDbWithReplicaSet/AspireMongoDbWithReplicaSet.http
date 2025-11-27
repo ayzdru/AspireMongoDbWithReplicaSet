@@ -1,0 +1,6 @@
+@AspireMongoDbWithReplicaSet_HostAddress = http://localhost:5135
+
+GET {{AspireMongoDbWithReplicaSet_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
